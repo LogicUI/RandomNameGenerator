@@ -16,7 +16,7 @@ const deleteModalButton = document.querySelector('.delete');
 const modalContent = document.querySelector('.content');
 const currentName = document.querySelector('.currentName');
 const title = document.querySelector('.modal-card-title');
-const loader = document.querySelector('.loading');
+const loading = document.querySelector('.loading');
 
 const helpCommands = [
   'Press <enter> or <click> anywhere to get the next random name',
@@ -27,10 +27,10 @@ const helpCommands = [
 
 const animateName = () => {
   currentName.classList.add('bounceIn');
-  loader.classList.remove("hide");
+  loading.classList.remove("hide");
   currentName.addEventListener('animationend', () => {
     currentName.classList.remove('bounceIn');
-    loader.classList.add("hide");
+    loading.classList.add("hide");
   });
 };
 
