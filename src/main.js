@@ -41,14 +41,14 @@ const renderNewName = () => {
 };
 
 const renderModalUnusedNames = () => {
-  title.textContent = 'List of Unused Names';
+  title.textContent = 'List of yet to be generated names';
   modal.classList.toggle('is-active');
   modalContent.innerHTML = '';
   appendElements(modalContent, names);
 };
 
 const renderModalUsedNames = () => {
-  title.textContent = 'List of Used Names';
+  title.textContent = 'List of names that are generated before';
   modal.classList.toggle('is-active');
   modalContent.innerHTML = '';
   appendElements(modalContent, used);
