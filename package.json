@@ -1,0 +1,19 @@
+{
+  "name": "randomNameGenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass sass/production:public/stylesheets --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.5",
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.0"
+  }
+}
