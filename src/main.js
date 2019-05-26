@@ -87,10 +87,11 @@ window.addEventListener('keypress', (event) => {
   }
 });
 
-window.addEventListener('click', () => {
+body.addEventListener('click', () => {
   renderNewName();
 });
 
-deleteModalButton.addEventListener('click', () => {
+deleteModalButton.addEventListener('click', (event) => {
+  event.stopPropagation();
   modal.classList.remove('is-active');
 });
