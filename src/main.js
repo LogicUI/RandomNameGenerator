@@ -10,7 +10,6 @@ import { appendElements } from './appendElements.js';
 
 const body = document.querySelector('body');
 
-
 const modal = document.querySelector('.modal');
 const deleteModalButton = document.querySelector('.delete');
 const modalContent = document.querySelector('.content');
@@ -27,10 +26,10 @@ const helpCommands = [
 
 const animateName = () => {
   currentName.classList.add('bounceIn');
-  loading.classList.remove("hide");
+  loading.classList.remove('hide');
   currentName.addEventListener('animationend', () => {
     currentName.classList.remove('bounceIn');
-    loading.classList.add("hide");
+    loading.classList.add('hide');
   });
 };
 
@@ -88,7 +87,15 @@ window.addEventListener('keypress', (event) => {
 });
 
 body.addEventListener('click', () => {
-  renderNewName();
+  if (!modal.classList.contains('is-active')) {
+    renderNewName();
+  }
+});
+
+window.addEventListener('click', (event) => {
+  if (modal.classList.contains('is-active')) {
+    modal.classList.remove('is-active');
+  }
 });
 
 deleteModalButton.addEventListener('click', (event) => {
