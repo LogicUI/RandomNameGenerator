@@ -20,9 +20,9 @@ const loader = document.querySelector('.loading');
 
 const helpCommands = [
   'Press <enter> or <click> anywhere to get the next random name',
-  'Press <q> to get list of names that are already called',
-  'Press <spacebar> to get list of names that have not  been called',
-  'Press <r> to reset the list of names that have not been called'
+  'Press <q> to get list of names that have been generated before',
+  'Press <spacebar> to get list of names that have yet to be generated',
+  'Press <r> to reset the yet to be generated list of names to its initial state'
 ];
 
 const animateName = () => {
