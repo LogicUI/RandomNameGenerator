@@ -4,8 +4,6 @@ This app is a random name generator app that generates a random name from a list
 
 The names used in the app are my classmates from ThoughtWorks
 
-This app was made as an improvement to my instructor app as he had problems generating unique names consistently from a random list. 
-
 
 # Features 
 
@@ -15,5 +13,9 @@ The app allows the user to look at the list of names that are already generated 
 
 The app allows the user to refresh the list 
 
+# Inspiration 
+
+
+The inspiration of the app was made as an improvement to my instructor app as he had problems generating unique names consistently from a random list. 
 
 
